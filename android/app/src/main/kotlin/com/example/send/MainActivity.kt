@@ -1,4 +1,4 @@
-package com.example.crypto_wallet_app
+package com.example.send
 
 import io.flutter.embedding.android.FlutterActivity
 

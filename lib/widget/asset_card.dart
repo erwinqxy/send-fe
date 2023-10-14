@@ -1,6 +1,6 @@
 import 'dart:math';
 
-import 'package:crypto_wallet_app/screen/static_page.dart';
+import 'package:send/screen/static_page.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';

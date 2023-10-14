@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:animate_do/animate_do.dart';
 import 'package:auto_animated/auto_animated.dart';
-import 'package:crypto_wallet_app/widget/asset_card.dart';
-import 'package:crypto_wallet_app/widget/bottom_navigation_bar.dart';
-import 'package:crypto_wallet_app/widget/portfolio_card.dart';
+import 'package:send/widget/asset_card.dart';
+import 'package:send/widget/bottom_navigation_bar.dart';
+import 'package:send/widget/portfolio_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iconly/iconly.dart';

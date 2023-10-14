@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'dart:math';
 
 import 'package:auto_animated/auto_animated.dart';
-import 'package:crypto_wallet_app/widget/asset_card.dart';
-import 'package:crypto_wallet_app/widget/button.dart';
+import 'package:send/widget/asset_card.dart';
+import 'package:send/widget/button.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
