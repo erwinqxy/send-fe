@@ -4,7 +4,8 @@ Our digital remittance app uplifts the unbanked community. Foreign workers can s
 Send, our one-stop remittance app, is built with Flutter and powered by the Solana blockchain. Cross-border transactions with our platform is swift, secure and seamless, allowing our users to cut through all financial intermediaries and save on unnecessary fees.
 
 ## UI Screens 
-![landing.png](assets%2Fimages%2Flanding.png)
+![photo_2023-10-15 21 48 19](https://github.com/erwinqxy/send-fe/assets/72030222/748785bd-1cb8-45df-b054-e572f6369174)
+
 ![home.png](assets%2Fimages%2Fhome.png)
 
 ## Setup
