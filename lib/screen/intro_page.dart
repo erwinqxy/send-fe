@@ -19,41 +19,25 @@ class IntroPage extends StatelessWidget {
       body: Stack(
         children: [
           Padding(
-            padding: const EdgeInsets.only(left : 16.0, top: 64, right: 16),
-            child: Column(
-              children: [
-                FadeInDown(
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.7,
-                    height: MediaQuery.of(context).size.width * 0.7,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      image: const DecorationImage(
-                        image: AssetImage('assets/images/NFT_4.png'),
-                        fit: BoxFit.cover,
+            padding: const EdgeInsets.only(left : 16.0, top: 140, right: 16),
+            child: Center(
+              child: Column(
+                children: [
+                  FadeInDown(
+                    child: Container(
+                      width: MediaQuery.of(context).size.width*1.5,
+                      height: MediaQuery.of(context).size.width*1.5,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: const DecorationImage(
+                          image: AssetImage('assets/images/splash.png'),
+                          fit: BoxFit.cover,
+                        ),
                       ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 30,),
-                FadeInLeft(child: Text('Uplifting the Unbanked', style: TextStyle(color:Colors.yellowAccent[700], fontSize: 42, fontWeight: FontWeight.bold, fontFamily: ''),)),
-                const SizedBox(height: 10,),
-                FadeInLeft(child: const Text('Transact cheaply, quickly, securely with Stablecoins', style: TextStyle(color: Colors.grey, fontSize: 20),)),
-                const SizedBox(height: 30,),
-                FadeInUp(
-                  child: Container(
-                    width: MediaQuery.of(context).size.width * 0.7,
-                    height: MediaQuery.of(context).size.width * 0.7,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      image: const DecorationImage(
-                        image: AssetImage('assets/images/logo_send.png'),
-                        fit: BoxFit.fitWidth,
-                      ),
-                    ),
-                  ),
-                ),
-              ]
+                ]
+              ),
             ),
           ),
           Positioned(
@@ -67,7 +51,7 @@ class IntroPage extends StatelessWidget {
                 child: SlideAction(
                   sliderRotate: false,
                   outerColor: Colors.grey[900],
-                  innerColor: Colors.blue[700],
+                  innerColor: Color(0xFF34C8B9),
                   key: key,
                   sliderButtonIcon: const Icon(IconlyBroken.arrow_right),
                   onSubmit: () {
