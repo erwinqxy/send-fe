@@ -2,9 +2,8 @@
 
 
 ## UI Screens 
-
-![home.png](assets%2Fimages%2Fhome.png)
-![landing.png](assets%2Fimages%2Flanding.png)
+- ![landing.png](assets%2Fimages%2Flanding.png)
+- ![home.png](assets%2Fimages%2Fhome.png)
 
 ## Setup
 
