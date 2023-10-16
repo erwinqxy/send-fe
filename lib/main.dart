@@ -1,4 +1,4 @@
-import 'package:crypto_wallet_app/screen/intro_page.dart';
+import 'package:send/screen/intro_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

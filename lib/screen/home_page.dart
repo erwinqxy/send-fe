@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:animate_do/animate_do.dart';
 import 'package:auto_animated/auto_animated.dart';
-import 'package:crypto_wallet_app/widget/asset_card.dart';
-import 'package:crypto_wallet_app/widget/bottom_navigation_bar.dart';
-import 'package:crypto_wallet_app/widget/portfolio_card.dart';
+import 'package:send/widget/asset_card.dart';
+import 'package:send/widget/bottom_navigation_bar.dart';
+import 'package:send/widget/portfolio_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:iconly/iconly.dart';
@@ -51,26 +51,26 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            FadeInDownBig(child: const Center(child: Text('Current Wallet Ballance', style: TextStyle(color: Colors.grey, fontSize: 18),))),
+            FadeInDownBig(child: const Center(child: Text('Wallet Ballance (USD)', style: TextStyle(color: Colors.grey, fontSize: 18),))),
             const SizedBox(height: 5,),
-            FadeInDownBig(child: Center(child: Text('\$3,293.45', style: TextStyle(color:Colors.yellowAccent[700], fontSize: 45, fontWeight: FontWeight.bold, fontFamily: ''),))),
+            FadeInDownBig(child: Center(child: Text('\$6,993.00', style: TextStyle(color:Colors.lightBlueAccent[700], fontSize: 45, fontWeight: FontWeight.bold, fontFamily: ''),))),
             const SizedBox(height: 25,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                FadeInLeft(child:_sendReceive(context, title: 'Send', icon: Icon(IconlyBroken.arrow_up, size: 30, color:Colors.grey[400]))),
+                FadeInUp(child:_sendReceive(context, title: 'Deposit', icon: Icon(IconlyBroken.wallet, size: 30, color:Colors.grey[400]))),
                 const SizedBox(width:20,),
-                FadeInDown(child:_sendReceive(context, title: 'Receive', icon: Icon(IconlyBroken.arrow_down, size: 30, color:Colors.grey[400]))),
+                FadeInLeft(child:_sendReceive(context, title: 'Transfer', icon: Icon(IconlyBroken.arrow_up, size: 30, color:Colors.grey[400]))),
                 const SizedBox(width:20,),
-                FadeInUp(child:_sendReceive(context, title: 'Buy', icon: Icon(IconlyBroken.bag_2, size: 30, color:Colors.grey[400]))),
+                FadeInDown(child:_sendReceive(context, title: 'Exchange', icon: Icon(IconlyBroken.swap, size: 30, color:Colors.grey[400]))),
                 const SizedBox(width:20,),
-                FadeInRight(child:_sendReceive(context, title: 'Swap', icon: Icon(IconlyBroken.swap, size: 30, color:Colors.grey[400]))),
+                FadeInRight(child:_sendReceive(context, title: 'Withdraw', icon: Icon(IconlyBroken.arrow_down, size: 30, color:Colors.grey[400]))),
               ],
             ),
             const SizedBox(height: 25,),
             const Divider(height: 1, thickness: 0.5, color: Colors.grey,),
             const SizedBox(height: 16,),
-            _viewAll(title: 'Portfolio'),
+            _viewAll(title: 'Wallet Holdings'),
             Row(
               children: [
                 Expanded(
@@ -183,7 +183,7 @@ class _HomePageState extends State<HomePage> {
           child: icon,
         ),
         const SizedBox(height: 8,),
-        Text(title, style: TextStyle(color: Colors.grey[300],  fontSize: 20),),
+        Text(title, style: TextStyle(color: Colors.grey[300],  fontSize: 15),),
       ],
     );
   }

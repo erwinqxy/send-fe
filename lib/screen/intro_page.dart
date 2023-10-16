@@ -1,5 +1,5 @@
 import 'package:animate_do/animate_do.dart';
-import 'package:crypto_wallet_app/screen/home_page.dart';
+import 'package:send/screen/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:slide_to_act/slide_to_act.dart';
@@ -35,11 +35,24 @@ class IntroPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                const SizedBox(height: 70,),
-                FadeInLeft(child: Text('Create Your Cryptocurrency Wallet App', style: TextStyle(color:Colors.yellowAccent[700], fontSize: 42, fontWeight: FontWeight.bold, fontFamily: ''),)),
-                const SizedBox(height: 20,),
-                FadeInLeft(child: const Text('Grow your portfolio by receiving rewards up to 15.5% on your crypto assets', style: TextStyle(color: Colors.grey, fontSize: 20),)),
-                const SizedBox(height: 100,),
+                const SizedBox(height: 30,),
+                FadeInLeft(child: Text('Uplifting the Unbanked', style: TextStyle(color:Colors.yellowAccent[700], fontSize: 42, fontWeight: FontWeight.bold, fontFamily: ''),)),
+                const SizedBox(height: 10,),
+                FadeInLeft(child: const Text('Transact cheaply, quickly, securely with Stablecoins', style: TextStyle(color: Colors.grey, fontSize: 20),)),
+                const SizedBox(height: 30,),
+                FadeInUp(
+                  child: Container(
+                    width: MediaQuery.of(context).size.width * 0.7,
+                    height: MediaQuery.of(context).size.width * 0.7,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: const DecorationImage(
+                        image: AssetImage('assets/images/logo_send.png'),
+                        fit: BoxFit.fitWidth,
+                      ),
+                    ),
+                  ),
+                ),
               ]
             ),
           ),
@@ -54,7 +67,7 @@ class IntroPage extends StatelessWidget {
                 child: SlideAction(
                   sliderRotate: false,
                   outerColor: Colors.grey[900],
-                  innerColor: Colors.yellowAccent[700],
+                  innerColor: Colors.blue[700],
                   key: key,
                   sliderButtonIcon: const Icon(IconlyBroken.arrow_right),
                   onSubmit: () {
@@ -67,7 +80,7 @@ class IntroPage extends StatelessWidget {
                       },
                     );
                   },
-                  child: FadeInRight(child: const Text('Swipe to get started', style: TextStyle(color: Colors.black, fontSize: 17),)),
+                  child: FadeInRight(child: const Text('Swipe to get started', style: TextStyle(color: Colors.white, fontSize: 17),)),
                 ),
               );
             },),
